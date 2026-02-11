@@ -16,3 +16,6 @@ EMBEDDING_MODEL = "text-embedding-3-small"
 CHUNK_SIZE = 800
 # 문맥 유지를 위해
 CHUNK_OVERLAP = 120
+# chat 모델 설정
+CHAT_MODEL = "gpt-4o-mini"
+
