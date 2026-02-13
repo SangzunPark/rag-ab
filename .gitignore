@@ -29,3 +29,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Data
+data/docs
+data/*.pdf
