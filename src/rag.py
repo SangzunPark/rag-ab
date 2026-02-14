@@ -116,8 +116,20 @@ def answer_question(question: str, top_k: int =4) -> Tuple[str, List[dict], floa
 
     citations = citations_line(docs)
     dt = time.time() - t0
-    return answer, citations, format_sources(docs), dt
+    source_pages = source_pages_csv(docs)
+    return answer, citations, format_sources(docs), dt, source_pages
 
+# 문서들이 몇 페이지에서 왔는지 찾아내어 문자열로 변환
+def source_pages_csv(docs) -> str:
+    pages = []
+    for d in docs:
+        # dict에서 에러방지 공백추가
+        page = (d.metadata or {}).get("page")
+        if isinstance(page, int):
+            pages.append(page + 1)
+    pages = sorted(pages)
+    # join 함수는 글자만 합칠 수 있기 때문에 숫자를 str로 변환 후 "," 를 이용해 join(CSV형태)
+    return ",".join(str(p) for p in pages)
 
 
 def main():
