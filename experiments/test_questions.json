@@ -1,0 +1,22 @@
+[
+  "What is the bias-variance tradeoff?",
+  "What is overfitting?",
+  "What is the difference between training error and test error?",
+  "What is the purpose of a validation set?",
+  "What is the difference between parametric and non-parametric methods?",
+  "What is a supervised learning problem?",
+  "What is an unsupervised learning problem?",
+  "What does mean squared error (MSE) measure?",
+  "What is the goal of statistical learning?",
+  "What is the difference between classification and regression?",
+  "What is the concept of model flexibility?",
+  "Why can very flexible models have high variance?",
+  "Why can very simple models have high bias?",
+  "What is an example of a high-bias model?",
+  "What is an example of a high-variance model?",
+  "What is the meaning of generalization?",
+  "What is the role of K-nearest neighbors as flexibility changes?",
+  "Why does test error often show a U-shape as flexibility increases?",
+  "What is the tradeoff between interpretability and flexibility?",
+  "What is the difference between inference and prediction?"
+]
