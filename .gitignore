@@ -33,3 +33,6 @@ Thumbs.db
 # Data
 data/docs
 data/*.pdf
+
+# DB
+experiments/events.db
